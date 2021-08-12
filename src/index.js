@@ -30,7 +30,7 @@ const handler = async (event, context, cb) => {
         // Save to the DB
         const dbConn = await mysql.createConnection({
             host: DB_HOST,
-            user: DB_PASSWORD,
+            user: DB_USERNAME,
             password: DB_PASSWORD,
             database: DB_DATABASE,
         });
